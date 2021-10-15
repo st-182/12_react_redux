@@ -1,9 +1,14 @@
 // Reducers
-import counterReducer from './counterReducer';
+import counterReducer from "./counterReducer";
+import todosReducer from "./todosReducer";
 // ... other reducers
 
-import { combineReducers } from 'redux';
+import { combineReducers } from "redux";
 
-const allReducers = combineReducers({ counter: counterReducer });
+//States
+const allReducers = combineReducers({
+  counter: counterReducer,
+  todos: todosReducer,
+});
 
 export default allReducers;
